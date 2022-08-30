@@ -29,7 +29,7 @@ export const Gallery = (props) => {
         </div>
         <div className="row">
           <div className="portfolio-items">
-            {images.map((item) => (
+            {images.slice(0, 3).map((item) => (
               <div key={item.albumName} className="col-sm-6 col-md-4 col-lg-4">
                 <Image title={item.albumName} smallImage={item.featuredimage} />
               </div>
