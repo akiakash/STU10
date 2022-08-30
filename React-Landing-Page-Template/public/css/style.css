@@ -17,12 +17,12 @@ h2 {
   text-transform: uppercase;
   margin: 0 0 20px;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 38px;
   color: #333;
 }
 h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
 }
 h4 {
@@ -36,11 +36,11 @@ h5 {
   line-height: 20px;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
 }
 p.intro {
   margin: 12px 0 0;
-  line-height: 24px;
+  line-height: 25px;
 }
 a {
   color: #608dfd;
@@ -264,6 +264,7 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 100px 0;
+  text-align: center;
 }
 #about h3 {
   font-size: 22px;
@@ -281,7 +282,7 @@ header .intro-text {
   height: 4px;
   width: 60px;
   bottom: 0;
-  left: 0;
+  left: 540;
 }
 #about .about-text li {
   margin-bottom: 6px;
