@@ -1,6 +1,6 @@
 export const photos = [
   {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    src: "https://i.pinimg.com/564x/de/eb/29/deeb294ed3af52a712a6040fabe9e68e.jpg",
     width: 4,
     height: 3,
   },

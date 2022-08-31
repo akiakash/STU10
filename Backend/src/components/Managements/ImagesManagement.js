@@ -18,7 +18,7 @@ function ImagesManagement() {
   const [albumTag, setAlbumTag] = useState("");
   const [result, setResult] = useState("");
 
-  const [data, setData] = React.useState({
+  const [data, setData] = useState({
     input1: "",
     input2: "",
     input3: "",
@@ -81,7 +81,7 @@ function ImagesManagement() {
           marginLeft: "10%",
           marginRight: "10%",
           marginTop: "5%",
-          height: "400px",
+          height: "100%",
         }}
       >
         <a href="/viewmarks">
@@ -116,9 +116,193 @@ function ImagesManagement() {
               onChange={(e) => setFeaturedImage(e.target.value)}
             />
 
+            {/* <TextField
+              label="Album Images"
+              onChange={(e) => setAlbumImage(e.target.value)}
+            />
             <TextField
               label="Album Images"
               onChange={(e) => setAlbumImage(e.target.value)}
+            /> */}
+            <TextField
+              label="Album Images"
+              name="input1"
+              value={data.input1}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input2"
+              value={data.input2}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input3"
+              value={data.input3}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input4"
+              value={data.input4}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input5"
+              value={data.input5}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input6"
+              value={data.input6}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input7"
+              value={data.input7}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input8"
+              value={data.input8}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input9"
+              value={data.input9}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input10"
+              value={data.input10}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input11"
+              value={data.input11}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input12"
+              value={data.input12}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input13"
+              value={data.input13}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input14"
+              value={data.input14}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input15"
+              value={data.input15}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input16"
+              value={data.input16}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input17"
+              value={data.input17}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input18"
+              value={data.input18}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input19"
+              value={data.input19}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input20"
+              value={data.input20}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input21"
+              value={data.input21}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input22"
+              value={data.input22}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input23"
+              value={data.input23}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input24"
+              value={data.input23}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input25"
+              value={data.input25}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input26"
+              value={data.input26}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input27"
+              value={data.input27}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input28"
+              value={data.input28}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input29"
+              value={data.input29}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Album Images"
+              name="input30"
+              value={data.input30}
+              onChange={handleChange}
             />
           </div>
 

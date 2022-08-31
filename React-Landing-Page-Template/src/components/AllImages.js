@@ -1,8 +1,9 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
+import axios from "axios";
 
 function AllImages() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -18,23 +19,43 @@ function AllImages() {
     setViewerIsOpen(false);
   };
 
+  const [image, setImage] = useState([]);
+
+  const getRequest = () => {
+    axios
+      .get(`http://localhost:4000/imagesmanagement/`)
+      .then((res) => {
+        setImage(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getRequest();
+  }, [image]);
+
   return (
     <div>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
+      {image.map((item) => (
+        <Gallery photos={photos} onClick={openLightbox} />
+      ))}
+
+      {/* <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map((x) => ({
+              views={image.map((x) => ({
                 ...x,
-                srcset: x.srcSet,
-                caption: x.title,
+                srcset: x.images,
+                caption: x.albumName,
               }))}
             />
           </Modal>
         ) : null}
-      </ModalGateway>
+      </ModalGateway> */}
     </div>
   );
 }
