@@ -14,7 +14,7 @@ const PostSchema = mongoose.Schema({
     required: true,
   },
 
-  images: [],
+  images1: [],
 });
 
 module.exports = mongoose.model("images", PostSchema);

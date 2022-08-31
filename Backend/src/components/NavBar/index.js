@@ -32,6 +32,13 @@ export default function NavBar() {
             </S.Item>
             <img src={Arrow} alt="arrow" />
           </S.ListItem>
+          <S.ListItem>
+            <S.Item href="/albummanagement">
+              <S.ItemIcon src={Time} alt="time" />
+              Album Manegement
+            </S.Item>
+            <img src={Arrow} alt="arrow" />
+          </S.ListItem>
         </S.List>
       </S.Container>
     </S.Wrapper>

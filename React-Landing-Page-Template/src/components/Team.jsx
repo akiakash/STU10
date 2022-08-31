@@ -32,7 +32,12 @@ export const Team = (props) => {
             <div className="col-md-4 col-sm-6 team">
               <div className="thumbnail">
                 {" "}
-                <img src={item.image} alt="..." className="team-img" />
+                <img
+                  src={item.image}
+                  alt="..."
+                  className="team-img"
+                  style={{ borderRadius: "150px" }}
+                />
                 <div className="caption">
                   <h4>{item.name}</h4>
                   <p>{item.position}</p>

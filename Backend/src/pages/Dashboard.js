@@ -7,6 +7,7 @@ import * as S from "./styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import TeamManagement from "components/Managements/TeamManagement";
+import ImagesManagement from "components/Managements/ImagesManagement";
 
 export default function Dashboard() {
   return (
@@ -22,6 +23,7 @@ export default function Dashboard() {
             <Route path="/" element={<Efficiency />} />
 
             <Route path="/teammanagement" element={<TeamManagement />} />
+            <Route path="/albummanagement" element={<ImagesManagement />} />
           </Routes>
         </BrowserRouter>
       </S.Main>
